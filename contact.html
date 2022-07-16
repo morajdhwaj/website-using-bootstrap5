@@ -14,9 +14,22 @@
     <title>Contact</title>
   </head>
   <body>
-    <h1>Contact Page</h1>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
+    <h1 id="title">Contact Page</h1>
+    <p id="counter">5</p>
+    <button
+      type="button"
+      class="btn btn-primary"
+      onclick="var a = parseInt(document.getElementById('counter').innerHTML);  document.getElementById('counter').innerHTML = 1+a; "
+    >
+      Primary
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      onclick="var a = parseInt(document.getElementById('counter').innerHTML);  document.getElementById('counter').innerHTML = a-1; "
+    >
+      Secondary
+    </button>
     <button type="button" class="btn btn-success">Success</button>
     <button type="button" class="btn btn-danger">Danger</button>
     <button type="button" class="btn btn-warning">Warning</button>
